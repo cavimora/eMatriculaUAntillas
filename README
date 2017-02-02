@@ -7,3 +7,6 @@ Usuarios de la Base de datos
 NO USAR ESTE USUARIO, ES EL ADMIN DE LA DB
 *UAntillasAdmin/DB4dmin!*
 
+Usar el usuario de cada uno para la coneccion directa a la base de datos desde el cliente de SQL Server Management Studio.
+
+El sitio web tendra su propio acceso a la BD.
