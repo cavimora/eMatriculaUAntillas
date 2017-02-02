@@ -1,12 +1,3 @@
-Usuarios de la Base de datos
-* joseDev/jos3D3v!
-* donaldDev/donaldD3v!
-* stephanieDev/st3phani3D3v!
-* carlosDev/carlosD3v!
-
-NO USAR ESTE USUARIO, ES EL ADMIN DE LA DB
+Usuario de la base de datos
 * UAntillasAdmin/DB4dmin!
 
-Usar el usuario de cada uno para la coneccion directa a la base de datos desde el cliente de SQL Server Management Studio.
-
-El sitio web tendra su propio acceso a la BD.
