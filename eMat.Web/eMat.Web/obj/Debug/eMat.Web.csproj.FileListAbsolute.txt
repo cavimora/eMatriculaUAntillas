@@ -1,16 +1,4 @@
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\ApplicationInsights.config
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\csc.exe
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\Microsoft.CSharp.Core.targets
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\System.Collections.Immutable.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\System.Reflection.Metadata.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\vbc.exe
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\VBCSCompiler.exe
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\roslyn\VBCSCompiler.exe.config
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\eMat.Web.dll.config
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\eMat.Web.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\eMat.Web.pdb
@@ -27,7 +15,6 @@ Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.ApplicationInsights.d
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.AspNet.Identity.Core.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.AspNet.Identity.Owin.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Security.Cookies.dll
@@ -56,7 +43,6 @@ Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.AI.ServerTelemetryCha
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.AI.Web.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.AI.WindowsServer.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.ApplicationInsights.xml
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\System.Web.Helpers.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\System.Web.Mvc.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\System.Web.Optimization.xml
@@ -85,3 +71,8 @@ Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Security.Twitter
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\obj\Debug\eMat.Web.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\obj\Debug\eMat.Web.pdb
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\obj\Debug\eMat.Web.csprojResolveAssemblyReference.cache
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\eMat.BL.dll
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\eMat.DA.dll
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\eMat.BL.pdb
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\eMat.DA.pdb

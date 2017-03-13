@@ -1,0 +1,35 @@
+﻿@model eMat.DA.tbCarrera
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbCarrera</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.carrera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carrera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPlanEstudio.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPlanEstudio.nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.sigla }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
