@@ -83,6 +83,5 @@ Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Security.OAuth.x
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Security.Google.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Security.Twitter.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\obj\Debug\eMat.Web.csprojResolveAssemblyReference.cache
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\obj\Debug\eMat.Web.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.Web\obj\Debug\eMat.Web.pdb
