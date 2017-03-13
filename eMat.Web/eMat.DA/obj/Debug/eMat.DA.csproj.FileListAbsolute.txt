@@ -1,5 +1,0 @@
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\eMat.DA.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\eMat.DA.pdb
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.csprojResolveAssemblyReference.cache
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.pdb

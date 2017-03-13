@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>b7e005eb-d985-4c95-850e-93b6b9e17a1c</ProjectGuid>
+    <ProjectGuid>94e6e124-52b5-46ab-8455-d39f84de0a28</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eMat.DA</RootNamespace>

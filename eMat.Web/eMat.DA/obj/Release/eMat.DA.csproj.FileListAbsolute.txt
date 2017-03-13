@@ -1,4 +1,0 @@
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Release\eMat.DA.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Release\eMat.DA.pdb
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Release\eMat.DA.dll
-Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Release\eMat.DA.pdb
