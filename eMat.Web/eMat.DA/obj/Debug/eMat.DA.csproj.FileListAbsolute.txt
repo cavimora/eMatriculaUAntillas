@@ -5,3 +5,4 @@ Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\EntityFramework.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\EntityFramework.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.pdb
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.csprojResolveAssemblyReference.cache
