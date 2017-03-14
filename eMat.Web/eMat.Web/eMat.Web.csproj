@@ -199,8 +199,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\EstudiantesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\tbPlanEstudiosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -258,6 +260,16 @@
     <Content Include="Views\Estudiantes\Details.cshtml" />
     <Content Include="Views\Estudiantes\Edit.cshtml" />
     <Content Include="Views\Estudiantes\Index.cshtml" />
+    <Content Include="Views\Curso\Create.cshtml" />
+    <Content Include="Views\Curso\Delete.cshtml" />
+    <Content Include="Views\Curso\Details.cshtml" />
+    <Content Include="Views\Curso\Edit.cshtml" />
+    <Content Include="Views\Curso\Index.cshtml" />
+    <Content Include="Views\tbPlanEstudios\Create.cshtml" />
+    <Content Include="Views\tbPlanEstudios\Delete.cshtml" />
+    <Content Include="Views\tbPlanEstudios\Details.cshtml" />
+    <Content Include="Views\tbPlanEstudios\Edit.cshtml" />
+    <Content Include="Views\tbPlanEstudios\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

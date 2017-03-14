@@ -1,0 +1,35 @@
+﻿@model eMat.DA.tbPlanEstudio
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbPlanEstudio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbCarrera.carrera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbCarrera.carrera)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.sigla }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
