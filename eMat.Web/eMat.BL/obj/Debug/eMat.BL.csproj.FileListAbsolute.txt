@@ -1,0 +1,8 @@
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.dll
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.pdb
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.DA.dll
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.DA.pdb
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.xml
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.csprojResolveAssemblyReference.cache
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.dll
+Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.pdb

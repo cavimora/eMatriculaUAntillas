@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eMatriculaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbCarrera">
+    <Key>
+      <PropertyRef Name="sigla" />
+    </Key>
+    <Property Name="sigla" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="carrera" Type="nchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbCurso">
+    <Key>
+      <PropertyRef Name="idCurso" />
+    </Key>
+    <Property Name="idCurso" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="nombre" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="creditos" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbCursoXPlan">
+    <Key>
+      <PropertyRef Name="sigla" />
+      <PropertyRef Name="idCurso" />
+    </Key>
+    <Property Name="sigla" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="idCurso" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbEstudiante">
+    <Key>
+      <PropertyRef Name="carnet" />
+    </Key>
+    <Property Name="carnet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cedula" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="nombre" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="apellidos" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="direccion" Type="nchar" MaxLength="200" Nullable="false" />
+    <Property Name="email" Type="nchar" MaxLength="40" Nullable="false" />
+    <Property Name="telefono" Type="nchar" MaxLength="40" Nullable="false" />
+    <Property Name="contrasena" Type="nchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbEstudianteXCarrera">
+    <Key>
+      <PropertyRef Name="carnet" />
+      <PropertyRef Name="sigla" />
+    </Key>
+    <Property Name="carnet" Type="int" Nullable="false" />
+    <Property Name="sigla" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbGrupo">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+    </Key>
+    <Property Name="idGrupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idCurso" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="horario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbMatricula">
+    <Key>
+      <PropertyRef Name="carnet" />
+      <PropertyRef Name="idGrupo" />
+      <PropertyRef Name="cuatrimestre" />
+      <PropertyRef Name="anio" />
+    </Key>
+    <Property Name="carnet" Type="int" Nullable="false" />
+    <Property Name="idGrupo" Type="int" Nullable="false" />
+    <Property Name="cuatrimestre" Type="int" Nullable="false" />
+    <Property Name="anio" Type="int" Nullable="false" />
+    <Property Name="nota" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tbPlanEstudio">
+    <Key>
+      <PropertyRef Name="sigla" />
+    </Key>
+    <Property Name="sigla" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="nombre" Type="nchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbRequisito">
+    <Key>
+      <PropertyRef Name="idCurso" />
+      <PropertyRef Name="idCursoRequisito" />
+    </Key>
+    <Property Name="idCurso" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="idCursoRequisito" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tbCursoXPlan_tbCurso">
+    <End Role="tbCurso" Type="Self.tbCurso" Multiplicity="1" />
+    <End Role="tbCursoXPlan" Type="Self.tbCursoXPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCurso">
+        <PropertyRef Name="idCurso" />
+      </Principal>
+      <Dependent Role="tbCursoXPlan">
+        <PropertyRef Name="idCurso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbCursoXPlan_tbPlanEstudio">
+    <End Role="tbPlanEstudio" Type="Self.tbPlanEstudio" Multiplicity="1" />
+    <End Role="tbCursoXPlan" Type="Self.tbCursoXPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbPlanEstudio">
+        <PropertyRef Name="sigla" />
+      </Principal>
+      <Dependent Role="tbCursoXPlan">
+        <PropertyRef Name="sigla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEstudianteXCarrera_tbCarrera">
+    <End Role="tbCarrera" Type="Self.tbCarrera" Multiplicity="1" />
+    <End Role="tbEstudianteXCarrera" Type="Self.tbEstudianteXCarrera" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCarrera">
+        <PropertyRef Name="sigla" />
+      </Principal>
+      <Dependent Role="tbEstudianteXCarrera">
+        <PropertyRef Name="sigla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbEstudianteXCarrera_tbEstudiante">
+    <End Role="tbEstudiante" Type="Self.tbEstudiante" Multiplicity="1" />
+    <End Role="tbEstudianteXCarrera" Type="Self.tbEstudianteXCarrera" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEstudiante">
+        <PropertyRef Name="carnet" />
+      </Principal>
+      <Dependent Role="tbEstudianteXCarrera">
+        <PropertyRef Name="carnet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbGrupo_tbCurso">
+    <End Role="tbCurso" Type="Self.tbCurso" Multiplicity="1" />
+    <End Role="tbGrupo" Type="Self.tbGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCurso">
+        <PropertyRef Name="idCurso" />
+      </Principal>
+      <Dependent Role="tbGrupo">
+        <PropertyRef Name="idCurso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbMatricula_tbEstudiante">
+    <End Role="tbEstudiante" Type="Self.tbEstudiante" Multiplicity="1" />
+    <End Role="tbMatricula" Type="Self.tbMatricula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEstudiante">
+        <PropertyRef Name="carnet" />
+      </Principal>
+      <Dependent Role="tbMatricula">
+        <PropertyRef Name="carnet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbMatricula_tbGrupo">
+    <End Role="tbGrupo" Type="Self.tbGrupo" Multiplicity="1" />
+    <End Role="tbMatricula" Type="Self.tbMatricula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbGrupo">
+        <PropertyRef Name="idGrupo" />
+      </Principal>
+      <Dependent Role="tbMatricula">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbPlanEstudio_tbCarrera">
+    <End Role="tbCarrera" Type="Self.tbCarrera" Multiplicity="1" />
+    <End Role="tbPlanEstudio" Type="Self.tbPlanEstudio" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tbCarrera">
+        <PropertyRef Name="sigla" />
+      </Principal>
+      <Dependent Role="tbPlanEstudio">
+        <PropertyRef Name="sigla" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbRequisito_tbCurso">
+    <End Role="tbCurso" Type="Self.tbCurso" Multiplicity="1" />
+    <End Role="tbRequisito" Type="Self.tbRequisito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCurso">
+        <PropertyRef Name="idCurso" />
+      </Principal>
+      <Dependent Role="tbRequisito">
+        <PropertyRef Name="idCurso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbRequisito_tbCurso1">
+    <End Role="tbCurso" Type="Self.tbCurso" Multiplicity="1" />
+    <End Role="tbRequisito" Type="Self.tbRequisito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCurso">
+        <PropertyRef Name="idCurso" />
+      </Principal>
+      <Dependent Role="tbRequisito">
+        <PropertyRef Name="idCursoRequisito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="eMatriculaModelStoreContainer">
+    <EntitySet Name="tbCarrera" EntityType="Self.tbCarrera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbCurso" EntityType="Self.tbCurso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbCursoXPlan" EntityType="Self.tbCursoXPlan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbEstudiante" EntityType="Self.tbEstudiante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbEstudianteXCarrera" EntityType="Self.tbEstudianteXCarrera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbGrupo" EntityType="Self.tbGrupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbMatricula" EntityType="Self.tbMatricula" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbPlanEstudio" EntityType="Self.tbPlanEstudio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbRequisito" EntityType="Self.tbRequisito" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbCursoXPlan_tbCurso" Association="Self.FK_tbCursoXPlan_tbCurso">
+      <End Role="tbCurso" EntitySet="tbCurso" />
+      <End Role="tbCursoXPlan" EntitySet="tbCursoXPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbCursoXPlan_tbPlanEstudio" Association="Self.FK_tbCursoXPlan_tbPlanEstudio">
+      <End Role="tbPlanEstudio" EntitySet="tbPlanEstudio" />
+      <End Role="tbCursoXPlan" EntitySet="tbCursoXPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEstudianteXCarrera_tbCarrera" Association="Self.FK_tbEstudianteXCarrera_tbCarrera">
+      <End Role="tbCarrera" EntitySet="tbCarrera" />
+      <End Role="tbEstudianteXCarrera" EntitySet="tbEstudianteXCarrera" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbEstudianteXCarrera_tbEstudiante" Association="Self.FK_tbEstudianteXCarrera_tbEstudiante">
+      <End Role="tbEstudiante" EntitySet="tbEstudiante" />
+      <End Role="tbEstudianteXCarrera" EntitySet="tbEstudianteXCarrera" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbGrupo_tbCurso" Association="Self.FK_tbGrupo_tbCurso">
+      <End Role="tbCurso" EntitySet="tbCurso" />
+      <End Role="tbGrupo" EntitySet="tbGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbMatricula_tbEstudiante" Association="Self.FK_tbMatricula_tbEstudiante">
+      <End Role="tbEstudiante" EntitySet="tbEstudiante" />
+      <End Role="tbMatricula" EntitySet="tbMatricula" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbMatricula_tbGrupo" Association="Self.FK_tbMatricula_tbGrupo">
+      <End Role="tbGrupo" EntitySet="tbGrupo" />
+      <End Role="tbMatricula" EntitySet="tbMatricula" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbPlanEstudio_tbCarrera" Association="Self.FK_tbPlanEstudio_tbCarrera">
+      <End Role="tbCarrera" EntitySet="tbCarrera" />
+      <End Role="tbPlanEstudio" EntitySet="tbPlanEstudio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbRequisito_tbCurso" Association="Self.FK_tbRequisito_tbCurso">
+      <End Role="tbCurso" EntitySet="tbCurso" />
+      <End Role="tbRequisito" EntitySet="tbRequisito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbRequisito_tbCurso1" Association="Self.FK_tbRequisito_tbCurso1">
+      <End Role="tbCurso" EntitySet="tbCurso" />
+      <End Role="tbRequisito" EntitySet="tbRequisito" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
