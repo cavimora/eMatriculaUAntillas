@@ -14,10 +14,11 @@ namespace eMat.Web.Controllers
 
         //private eMatriculaEntities db = new eMatriculaEntities();
         private EstudianteController estudiante;
-        ViewBag.vertMenu = "none";
+        
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.vertMenu = "none";
             return View();
         }
 
