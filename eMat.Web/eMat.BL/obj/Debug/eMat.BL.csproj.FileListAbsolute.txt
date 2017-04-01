@@ -6,3 +6,11 @@ Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.xml
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.csprojResolveAssemblyReference.cache
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.dll
 Z:\UIA\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.pdb
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.pdb
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.DA.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.DA.pdb
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.xml
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.csprojResolveAssemblyReference.cache
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.pdb

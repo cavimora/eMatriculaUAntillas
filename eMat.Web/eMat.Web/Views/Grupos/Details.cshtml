@@ -1,0 +1,35 @@
+﻿@model eMat.DA.tbGrupo
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbGrupo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.horario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.horario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbCurso.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbCurso.nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idGrupo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

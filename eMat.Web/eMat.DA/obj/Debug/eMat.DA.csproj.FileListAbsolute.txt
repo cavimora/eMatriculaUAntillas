@@ -14,3 +14,11 @@ C:\Users\cavim\Desktop\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\EntityFram
 C:\Users\cavim\Desktop\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.csprojResolveAssemblyReference.cache
 C:\Users\cavim\Desktop\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.dll
 C:\Users\cavim\Desktop\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.pdb
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\eMat.DA.dll.config
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\eMat.DA.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\eMat.DA.pdb
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\EntityFramework.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\bin\Debug\EntityFramework.xml
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.csprojResolveAssemblyReference.cache
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.DA\obj\Debug\eMat.DA.pdb

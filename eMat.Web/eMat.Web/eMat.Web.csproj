@@ -202,7 +202,9 @@
     <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\EstudiantesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MatriculaController.cs" />
     <Compile Include="Controllers\PlanEstudiosController.cs" />
+    <Compile Include="Controllers\GruposController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -270,6 +272,16 @@
     <Content Include="Views\PlanEstudios\Details.cshtml" />
     <Content Include="Views\PlanEstudios\Edit.cshtml" />
     <Content Include="Views\PlanEstudios\Index.cshtml" />
+    <Content Include="Views\Grupos\Create.cshtml" />
+    <Content Include="Views\Grupos\Delete.cshtml" />
+    <Content Include="Views\Grupos\Details.cshtml" />
+    <Content Include="Views\Grupos\Edit.cshtml" />
+    <Content Include="Views\Grupos\Index.cshtml" />
+    <Content Include="Views\Matricula\Create.cshtml" />
+    <Content Include="Views\Matricula\Delete.cshtml" />
+    <Content Include="Views\Matricula\Details.cshtml" />
+    <Content Include="Views\Matricula\Edit.cshtml" />
+    <Content Include="Views\Matricula\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
