@@ -23,24 +23,59 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li> @*Si la sesion esta iniciada muestra el perfil del usuario, si no, muestra el login*@
+                    <li>@Html.ActionLink("Oferta Academica", "About", "PlanEstudios")</li>
+                    <li>@Html.ActionLink("Matricula", "Contact", "Matricula")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</body>
-</html>
+    @{
+        List<string> menuList = new List<string>();
+        switch (ViewBag.vertMenu)
+        {
+            case "perfil":
+                menuList.Clear();
+                menuList.Add("Expediente,Perfil,Expediente");
+                menuList.Add("Actual,Perfil,Actual");
+                break;
+            case "oferAcad":
+                menuList.Clear();
+                break;
+            case "Matricula":
+                menuList.Clear();
+                break;
+            default:
+                menuList.Clear();
+                break;
+        }
+            }
+    @if (menuList.Count() > 0)
+    {
+        <div class="left-nav">
+            <ul class="nav navbar-nav">
+                @foreach (string menuItem in menuList)
+            {
+                string[] menuOption = menuItem.Split(',');
+                    <li>@Html.ActionLink(menuOption[0], menuOption[1], menuOption[2])</li>
+                }
+            </ul>
+        </div>
+    }
+   
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+        </body>
+    </html>
