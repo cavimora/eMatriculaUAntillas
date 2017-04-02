@@ -23,9 +23,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li> @*Si la sesion esta iniciada muestra el perfil del usuario, si no, muestra el login*@
-                    <li>@Html.ActionLink("Oferta Academica", "About", "PlanEstudios")</li>
-                    <li>@Html.ActionLink("Matricula", "Contact", "Matricula")</li>
+                    <li>@Html.ActionLink("Inicio", "Home", "Index")</li> @*Si la sesion esta iniciada muestra el perfil del usuario, si no, muestra el login*@
+                    <li>@Html.ActionLink("Oferta Academica", "PlanEstudios", "Index")</li>
+                    <li>@Html.ActionLink("Matricula", "Matricula", "Index")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -38,14 +38,15 @@
         {
             case "perfil":
                 menuList.Clear();
-                menuList.Add("Expediente,Perfil,Expediente");
-                menuList.Add("Actual,Perfil,Actual");
+                menuList.Add("Expediente,Expediente,Perfil");
+                menuList.Add("Actual,Actuañl,Perfil");
                 break;
             case "oferAcad":
                 menuList.Clear();
                 break;
-            case "Matricula":
+            case "matricula":
                 menuList.Clear();
+                menuList.Add("Planes de Estudio,Index,PlanEstudios");
                 break;
             default:
                 menuList.Clear();

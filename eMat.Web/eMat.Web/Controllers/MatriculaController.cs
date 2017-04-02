@@ -14,10 +14,11 @@ namespace eMat.Web.Controllers
     public class MatriculaController : Controller
     {
         private eMatriculaEntities db = new eMatriculaEntities();
-
+        
         // GET: Matricula
         public async Task<ActionResult> Index()
         {
+            ViewBag.vertMenu = "matricula";
             var tbMatricula = db.tbMatricula.Include(t => t.tbEstudiante).Include(t => t.tbGrupo);
             return View(await tbMatricula.ToListAsync());
         }
