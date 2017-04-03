@@ -1,20 +1,31 @@
 ﻿@model eMat.DA.tbEstudiante
 @{
     ViewBag.Title = "Index";
-    
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Login</h2>
 
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
-    <div id="login-container">
-        @Html.LabelFor(model => model.cedula, htmlAttributes: new { @class = "control-label col-md-2" })
-        @Html.EditorFor(model => model.cedula, new { htmlAttributes = new { @class = "form-control" } })
-        @Html.LabelFor(model => model.contrasena, htmlAttributes: new { @class = "control-label col-md-2" })
-        @Html.EditorFor(model => model.contrasena, new { htmlAttributes = new { @class = "form-control" } })
-        <input type="submit" value="Create" class="btn btn-default" />
-    </div>
+@{
+    if (((eMat.DA.tbEstudiante)Session["estudiante"]) == null)
+    {
+        <h2>Login</h2>
+        using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div id="login-container">
+                @Html.LabelFor(model => model.cedula, htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.EditorFor(model => model.cedula, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(model => model.contrasena, htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.EditorFor(model => model.contrasena, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        }
+    }
+    else
+    {
+        <h2>Perfil</h2>
+        Html.RenderPartial("../Perfil/_Perfil");
+    }
+
 }

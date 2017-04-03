@@ -1,0 +1,22 @@
+﻿@model eMat.DA.tbEstudiante
+@{
+    ViewBag.vertMenu = "perfil";
+}
+<h3>
+   Cedula: @Html.DisplayFor(Model => Model.cedula)
+</h3>
+<h3>
+    Carnet: @Html.DisplayFor(Model => Model.carnet)
+</h3>
+<h3>
+    Nombre: @Html.DisplayFor(Model => Model.nombre) @Html.DisplayFor(Model => Model.apellidos)
+</h3>
+<h3>
+    Direccion: @Html.DisplayFor(Model => Model.direccion)
+</h3>
+<h3>
+    Email: @Html.DisplayFor(Model => Model.email)
+</h3>
+<h3>
+    Telefono: @Html.DisplayFor(Model => Model.telefono)
+</h3>

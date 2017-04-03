@@ -203,6 +203,7 @@
     <Compile Include="Controllers\EstudiantesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MatriculaController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\PlanEstudiosController.cs" />
     <Compile Include="Controllers\GruposController.cs" />
     <Compile Include="Global.asax.cs">
@@ -282,6 +283,7 @@
     <Content Include="Views\Matricula\Details.cshtml" />
     <Content Include="Views\Matricula\Edit.cshtml" />
     <Content Include="Views\Matricula\Index.cshtml" />
+    <Content Include="Views\Perfil\_Perfil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

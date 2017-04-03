@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using eMat.DA;
 using eMat.BL;
 using System.Threading.Tasks;
+using static System.Collections.Specialized.BitVector32;
 
 namespace eMat.Web.Controllers
 {
@@ -31,6 +32,9 @@ namespace eMat.Web.Controllers
             {
                 this.estudiante = new EstudianteController();
                 estudiante = this.estudiante.validarEstudiante(estudiante);
+
+                Session["estudiante"] = estudiante;
+                ViewBag.vertMenu = "perfil";
                 //db.tbCarrera.(tbCarrera);
                 //await db.SaveChangesAsync();
                 //return RedirectToAction("Index");
