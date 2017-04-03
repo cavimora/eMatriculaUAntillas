@@ -1,22 +1,23 @@
 ﻿@model eMat.DA.tbEstudiante
 @{
     ViewBag.vertMenu = "perfil";
+    eMat.DA.tbEstudiante est = ((eMat.DA.tbEstudiante)Session["estudiante"]);
 }
 <h3>
-   Cedula: @Html.DisplayFor(Model => Model.cedula)
+   Cedula: @est.cedula
 </h3>
 <h3>
-    Carnet: @Html.DisplayFor(Model => Model.carnet)
+    Carnet: @est.carnet
 </h3>
 <h3>
-    Nombre: @Html.DisplayFor(Model => Model.nombre) @Html.DisplayFor(Model => Model.apellidos)
+    Nombre: @est.nombre @est.apellidos
 </h3>
 <h3>
-    Direccion: @Html.DisplayFor(Model => Model.direccion)
+    Direccion: @est.direccion
 </h3>
 <h3>
-    Email: @Html.DisplayFor(Model => Model.email)
+    Email: @est.email
 </h3>
 <h3>
-    Telefono: @Html.DisplayFor(Model => Model.telefono)
+    Telefono: @est.telefono
 </h3>
