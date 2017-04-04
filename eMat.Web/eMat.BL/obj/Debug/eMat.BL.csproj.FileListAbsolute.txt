@@ -14,3 +14,7 @@ C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug
 C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.csprojResolveAssemblyReference.cache
 C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.dll
 C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.pdb
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.dll.config
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Estefanía\Desktop\CaviU\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.SqlServer.xml

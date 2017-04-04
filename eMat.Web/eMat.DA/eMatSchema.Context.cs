@@ -18,6 +18,7 @@ namespace eMat.DA
         public eMatriculaEntities()
             : base("name=eMatriculaEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -14,12 +14,15 @@ namespace eMat.Web.Controllers
     {
 
         //private eMatriculaEntities db = new eMatriculaEntities();
-        private EstudianteController estudiante;
-        
+        private EstudianteBL estudiante;
+
         // GET: Home
         public ActionResult Index()
         {
-            ViewBag.vertMenu = "none";
+            if (((eMat.DA.tbEstudiante)Session["estudiante"]) == null)
+                ViewBag.vertMenu = "none";
+            else
+                ViewBag.vertMenu = "perfil";
             return View();
         }
 
@@ -30,7 +33,7 @@ namespace eMat.Web.Controllers
             //tbEstud.con
             if (ModelState.IsValid)
             {
-                this.estudiante = new EstudianteController();
+                this.estudiante = new EstudianteBL();
                 estudiante = this.estudiante.validarEstudiante(estudiante);
 
                 Session["estudiante"] = estudiante;

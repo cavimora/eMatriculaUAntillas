@@ -283,7 +283,9 @@
     <Content Include="Views\Matricula\Details.cshtml" />
     <Content Include="Views\Matricula\Edit.cshtml" />
     <Content Include="Views\Matricula\Index.cshtml" />
-    <Content Include="Views\Perfil\_Perfil.cshtml" />
+    <Content Include="Views\Home\_PerfilPartial.cshtml" />
+    <Content Include="Views\Perfil\Expediente.cshtml" />
+    <Content Include="Views\Perfil\Actual.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,11 @@
+﻿@model List<eMat.DA.tbMatricula>
+
+@foreach (var item in Model)
+{
+    <p>
+        @Html.DisplayFor(modelItem => item.tbGrupo.tbCurso.nombre)
+         - 
+        @Html.DisplayFor(modelItem => item.nota)
+    </p>
+}
+
