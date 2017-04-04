@@ -29,7 +29,7 @@ namespace eMat.BL
             }
         }
 
-        public object getActual(int carnet, int anioActual, int cuatriActual)
+        public List<tbMatricula> getActual(int carnet, int anioActual, int cuatriActual)
         {
             using (ent = new eMatriculaEntities())
             {
