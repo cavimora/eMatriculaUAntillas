@@ -282,14 +282,14 @@
     <Content Include="Views\Matricula\Delete.cshtml" />
     <Content Include="Views\Matricula\Details.cshtml" />
     <Content Include="Views\Matricula\Edit.cshtml" />
-    <Content Include="Views\Matricula\Index.cshtml" />
+    <Content Include="Views\Matricula\_Index.cshtml" />
     <Content Include="Views\Home\_PerfilPartial.cshtml" />
     <Content Include="Views\Perfil\Expediente.cshtml" />
     <Content Include="Views\Perfil\Actual.cshtml" />
+    <Content Include="Views\Matricula\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

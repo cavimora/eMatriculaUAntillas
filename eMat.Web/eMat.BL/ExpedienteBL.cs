@@ -22,7 +22,7 @@ namespace eMat.BL
                 List<tbMatricula> res = ent.tbMatricula
                                             .Include(b => b.tbGrupo)
                                             .Include(b => b.tbGrupo.tbCurso)
-                                            .Where(m => m.anio + m.cuatrimestre != anioActual + cuatriActual && m.carnet == carnet)
+                                            .Where(m => m.anio.ToString() + m.cuatrimestre.ToString() != anioActual.ToString() + cuatriActual.ToString() && m.carnet == carnet)
                                             .ToList();
                 return res;
 
@@ -40,7 +40,7 @@ namespace eMat.BL
                 List<tbMatricula> res = ent.tbMatricula
                                             .Include(b => b.tbGrupo)
                                             .Include(b => b.tbGrupo.tbCurso)
-                                            .Where(m => m.anio + m.cuatrimestre == anioActual + cuatriActual && m.carnet == carnet)
+                                            .Where(m => m.anio.ToString() + m.cuatrimestre.ToString() == anioActual.ToString() + cuatriActual.ToString() && m.carnet == carnet)
                                             .ToList();
                 return res;
 

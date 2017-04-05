@@ -1,0 +1,46 @@
+﻿@model IEnumerable<eMat.DA.tbMatricula>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nota)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbEstudiante.cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbGrupo.idCurso)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nota)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbEstudiante.cedula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbGrupo.idCurso)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -8,19 +8,30 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using eMat.DA;
+using eMat.BL;
 
 namespace eMat.Web.Controllers
 {
     public class MatriculaController : Controller
     {
         private eMatriculaEntities db = new eMatriculaEntities();
-        
+        private CarrerasBL carreras;
+
         // GET: Matricula
         public async Task<ActionResult> Index()
         {
-            ViewBag.vertMenu = "matricula";
-            var tbMatricula = db.tbMatricula.Include(t => t.tbEstudiante).Include(t => t.tbGrupo);
-            return View(await tbMatricula.ToListAsync());
+            //ViewBag.vertMenu = "matricula";
+            if (((eMat.DA.tbEstudiante)Session["estudiante"]) == null)
+                ViewBag.vertMenu = "none";
+            else
+            {
+                tbEstudiante est = ((eMat.DA.tbEstudiante)Session["estudiante"]);
+                ViewBag.vertMenu = "matricula";
+                carreras = new CarrerasBL();
+                return View(carreras.getCursosXCarrera(est.tbCarrera.FirstOrDefault().sigla));
+            }
+
+            return View();
         }
 
         // GET: Matricula/Details/5

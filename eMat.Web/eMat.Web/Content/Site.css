@@ -22,3 +22,50 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.left-nav {
+
+}
+
+.content{
+    padding-top: 60px;
+    width: 70%;
+    margin: auto;
+}
+.content h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.content h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.table {
+    width: 100%;
+    margin: auto;
+}
+
+.table .row {
+    width: 100%;
+    display: inline;
+    float: left;
+    
+}
+
+.table .row .column {
+    width: 33%;
+    float: left;
+}
+
+.table .row .column.title {
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
