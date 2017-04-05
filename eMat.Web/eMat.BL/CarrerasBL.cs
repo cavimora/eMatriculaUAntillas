@@ -15,7 +15,7 @@ namespace eMat.BL
             using (ent = new eMatriculaEntities())
             {
 
-                List<tbCurso> res = ent.tbCurso.SqlQuery("select curso.* from [dbo].[tbCurso] as curso inner join[dbo].[tbCursoXPlan] as plancurso on plancurso.idCurso = curso.idCurso where plancurso.sigla like '%IS%'").ToList();
+                List<tbCurso> res = ent.tbCurso.SqlQuery("select curso.* from [dbo].[tbCurso] as curso inner join[dbo].[tbCursoXPlan] as plancurso on plancurso.idCurso = curso.idCurso where plancurso.sigla like '%" + siglaCarrera + "%'").ToList();
                                    
                 return res;
             }
