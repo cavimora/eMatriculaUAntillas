@@ -52,6 +52,7 @@
     <Compile Include="CarrerasBL.cs" />
     <Compile Include="EstudianteBL.cs" />
     <Compile Include="ExpedienteBL.cs" />
+    <Compile Include="GrupoBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,35 +1,47 @@
-﻿@model eMat.DA.tbGrupo
+﻿@model List<eMat.DA.tbGrupo>
 
-@{
-    ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
 
-<h2>Details</h2>
 
-<div>
-    <h4>tbGrupo</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.horario)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.horario)
-        </dd>
+<div class="content">
+    <div class="table">
+        <div class="row">
+            <div class="column title">Curso</div>
+            <div class="column title">Id</div>
+            <div class="column title">Grupo</div>
+            <div class="column title">Horario</div>
+        </div>
+        @foreach (var item in Model)
+        {
+            using (Html.BeginForm("Matricular", "Grupos", "POST"))
+            {
+                @Html.HiddenFor(model => ((eMat.DA.tbEstudiante)Session["estudiante"]).carnet)
 
-        <dt>
-            @Html.DisplayNameFor(model => model.tbCurso.nombre)
-        </dt>
+                @Html.HiddenFor(model => item.idGrupo)
 
-        <dd>
-            @Html.DisplayFor(model => model.tbCurso.nombre)
-        </dd>
+                @Html.Hidden("cuatrimestre", "1")
 
-    </dl>
+                @Html.Hidden("annio", DateTime.Today.Year)
+                <div class="row">
+                    <div class="column">
+                        @item.tbCurso.nombre
+                    </div>
+                    <div class="column">
+                        @item.idCurso
+                    </div>
+                    <div class="column">
+                        @item.idGrupo
+                    </div>
+                    <div class="column">
+                        @item.horario
+                    </div>
+                    <div class="column">
+                        <input type="submit" value="Matricular" class="btn btn-default" />
+                    </div>
+                </div>
+            }
+
+        }
+
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.idGrupo }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

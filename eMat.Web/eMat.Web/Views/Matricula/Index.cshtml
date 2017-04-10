@@ -5,13 +5,31 @@
             <div class="column title">Id Curso</div>
             <div class="column title">Nombre</div>
             <div class="column title">Creditos</div>
+            <div class="column title">Requisitos</div>
+            <div class="column title">Grupos</div>
         </div>
         @foreach (var item in Model)
         {
             <div class="row">
+
                 <div class="column">@item.idCurso</div>
                 <div class="column">@item.nombre</div>
                 <div class="column">@item.creditos</div>
+                
+                @if (item.tbCurso1.Count > 0)
+                {
+                    <div class="column">
+                    @foreach (var req in item.tbCurso1)
+                    {
+                        @String.Concat(req.idCurso, ", ");
+                    }
+                    </div>
+                }
+                else
+                {
+                    <div class="column">N/A</div>
+                }
+                <div class="column">@Html.ActionLink("Ver", "Details", "Grupos", new { id = item.idCurso.Trim() }, null) </div>
             </div>
         }
     </div>

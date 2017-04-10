@@ -1,0 +1,40 @@
+﻿@model IEnumerable<eMat.DA.tbGrupo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.horario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbCurso.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.horario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbCurso.nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idGrupo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idGrupo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idGrupo })
+        </td>
+    </tr>
+}
+
+</table>

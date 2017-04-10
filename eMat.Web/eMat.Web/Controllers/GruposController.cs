@@ -8,34 +8,28 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using eMat.DA;
+using eMat.BL;
 
 namespace eMat.Web.Controllers
 {
     public class GruposController : Controller
     {
         private eMatriculaEntities db = new eMatriculaEntities();
-
+        GrupoBL grupos;
         // GET: tbGrupoes
-        public async Task<ActionResult> Index()
+        public ActionResult Index(string idCurso)
         {
-            var tbGrupo = db.tbGrupo.Include(t => t.tbCurso);
-            return View(await tbGrupo.ToListAsync());
+            return View(grupos.getGruposByIdCurso(idCurso));
         }
 
-        // GET: tbGrupoes/Details/5
-        public async Task<ActionResult> Details(int? id)
+        // GET: Grupos/Details/idcurso
+        public  ActionResult Details(string id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            tbGrupo tbGrupo = await db.tbGrupo.FindAsync(id);
-            if (tbGrupo == null)
-            {
-                return HttpNotFound();
-            }
-            return View(tbGrupo);
+            grupos = new GrupoBL();
+            return View(grupos.getGruposByIdCurso(id));
         }
+
+
 
         // GET: tbGrupoes/Create
         public ActionResult Create()
@@ -48,18 +42,20 @@ namespace eMat.Web.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "idGrupo,idCurso,horario")] tbGrupo tbGrupo)
+        
+        public ActionResult Matricular()
         {
-            if (ModelState.IsValid)
-            {
-                db.tbGrupo.Add(tbGrupo);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            }
+          
+            db.tbMatricula.Add(new tbMatricula() {
+                carnet = int.Parse(Request.Form[0]),
+                idGrupo = int.Parse(Request.Form[1]),
+                cuatrimestre = int.Parse(Request.Form[2]),
+                anio = int.Parse(Request.Form[3])
 
-            ViewBag.idCurso = new SelectList(db.tbCurso, "idCurso", "nombre", tbGrupo.idCurso);
-            return View(tbGrupo);
+            });
+            db.SaveChanges();
+            return RedirectToAction("Index", "Home");
+            //ViewBag.idCurso = new SelectList(db.tbCurso, "idCurso", "nombre", tbGrupo.idCurso);
         }
 
         // GET: tbGrupoes/Edit/5

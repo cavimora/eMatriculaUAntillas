@@ -277,7 +277,7 @@
     <Content Include="Views\Grupos\Delete.cshtml" />
     <Content Include="Views\Grupos\Details.cshtml" />
     <Content Include="Views\Grupos\Edit.cshtml" />
-    <Content Include="Views\Grupos\Index.cshtml" />
+    <Content Include="Views\Grupos\_Index.cshtml" />
     <Content Include="Views\Matricula\Create.cshtml" />
     <Content Include="Views\Matricula\Delete.cshtml" />
     <Content Include="Views\Matricula\Details.cshtml" />
@@ -287,6 +287,7 @@
     <Content Include="Views\Perfil\Expediente.cshtml" />
     <Content Include="Views\Perfil\Actual.cshtml" />
     <Content Include="Views\Matricula\Index.cshtml" />
+    <Content Include="Views\Grupos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

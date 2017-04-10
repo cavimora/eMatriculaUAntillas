@@ -26,7 +26,7 @@ namespace eMat.Web.Controllers
             else
             {
                 tbEstudiante est = ((eMat.DA.tbEstudiante)Session["estudiante"]);
-                ViewBag.vertMenu = "matricula";
+                //ViewBag.vertMenu = "matricula";
                 carreras = new CarrerasBL();
                 return View(carreras.getCursosXCarrera(est.tbCarrera.FirstOrDefault().sigla));
             }
