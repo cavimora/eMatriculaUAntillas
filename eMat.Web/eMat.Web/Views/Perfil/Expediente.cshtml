@@ -1,11 +1,33 @@
 ﻿@model List<eMat.DA.tbMatricula>
 
-@foreach (var item in Model)
-{
-    <p>
-        @Html.DisplayFor(modelItem => item.tbGrupo.tbCurso.nombre)
-         - 
-        @Html.DisplayFor(modelItem => item.nota)
-    </p>
-}
+@*@foreach (var item in Model)
+    {
+        <p>
+            @Html.DisplayFor(modelItem => item.tbGrupo.tbCurso.nombre)
+            -
+            @Html.DisplayFor(modelItem => item.nota)
+        </p>
+    }*@
+
+
+<div class="content">
+    <div class="table">
+        <div class="row">
+            <div class="column title">Id Curso</div>
+            <div class="column title">Nombre</div>
+            <div class="column title">Nota</div>
+            
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="row">
+
+                <div class="column">@item.tbGrupo.idCurso</div>
+                <div class="column">@item.tbGrupo.tbCurso.nombre</div>
+                <div class="column">@item.nota</div>
+            </div>
+        }
+    </div>
+</div>
+
 
