@@ -46,5 +46,12 @@ namespace eMat.Web.Controllers
             //ViewBag.sigla = new SelectList(db.tbPlanEstudio, "sigla", "nombre", tbEstudiante.sigla);
             return View(estudiante);
         }
+
+        [HttpPost]
+        public ActionResult Logout(){
+            Session.Clear();
+            Session.RemoveAll();
+            return RedirectToAction("Index");
+        }
     }
 }
