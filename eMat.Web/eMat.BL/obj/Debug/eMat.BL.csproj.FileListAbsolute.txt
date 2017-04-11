@@ -30,3 +30,15 @@ C:\Users\Estudiante\Desktop\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\Entit
 C:\Users\Estudiante\Desktop\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.csprojResolveAssemblyReference.cache
 C:\Users\Estudiante\Desktop\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.dll
 C:\Users\Estudiante\Desktop\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.pdb
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.dll.config
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.dll
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.BL.pdb
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.DA.dll
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.dll
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\eMat.DA.pdb
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.xml
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.csprojResolveAssemblyReference.cache
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.dll
+C:\Users\bermudez.j\Document\proyecto\eMatriculaUAntillas\eMat.Web\eMat.BL\obj\Debug\eMat.BL.pdb

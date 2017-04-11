@@ -52,6 +52,7 @@ namespace eMat.Web.Controllers
             Session.Clear();
             Session.RemoveAll();
             return RedirectToAction("Index");
+
         }
     }
 }
