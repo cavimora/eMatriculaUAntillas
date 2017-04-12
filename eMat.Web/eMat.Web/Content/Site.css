@@ -69,3 +69,9 @@ footer{
     font-weight: bold;
     border-bottom: 1px solid #000;
 }
+
+div.logoContainer {
+    position: absolute;
+    top: 0;
+    right: 70px;
+}

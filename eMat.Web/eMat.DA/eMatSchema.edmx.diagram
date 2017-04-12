@@ -10,7 +10,7 @@
         <EntityTypeShape EntityType="eMatriculaModel.tbEstudiante" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="eMatriculaModel.tbGrupo" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="eMatriculaModel.tbMatricula" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="eMatriculaModel.tbPlanEstudio" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eMatriculaModel.q" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="eMatriculaModel.FK_tbPlanEstudio_tbCarrera" ManuallyRouted="false" />
         <AssociationConnector Association="eMatriculaModel.FK_tbGrupo_tbCurso" ManuallyRouted="false" />
         <AssociationConnector Association="eMatriculaModel.FK_tbMatricula_tbEstudiante" ManuallyRouted="false" />
